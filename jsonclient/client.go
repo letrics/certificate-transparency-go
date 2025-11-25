@@ -32,8 +32,8 @@ import (
 	"strings"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/x509"
+	ct "github.com/letrics/certificate-transparency-go"
+	"github.com/letrics/certificate-transparency-go/x509"
 )
 
 const maxJitter = 250 * time.Millisecond

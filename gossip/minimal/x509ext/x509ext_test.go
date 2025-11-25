@@ -22,12 +22,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/certificate-transparency-go/gossip/minimal/x509ext"
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509/pkix"
+	"github.com/letrics/certificate-transparency-go/gossip/minimal/x509ext"
+	"github.com/letrics/certificate-transparency-go/tls"
+	"github.com/letrics/certificate-transparency-go/x509"
+	"github.com/letrics/certificate-transparency-go/x509/pkix"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/letrics/certificate-transparency-go"
 )
 
 var (

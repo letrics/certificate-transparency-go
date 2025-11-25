@@ -24,17 +24,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/ctpolicy"
-	"github.com/google/certificate-transparency-go/jsonclient"
-	"github.com/google/certificate-transparency-go/loglist3"
-	"github.com/google/certificate-transparency-go/trillian/ctfe"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
 	"github.com/google/trillian/monitoring"
+	"github.com/letrics/certificate-transparency-go/client"
+	"github.com/letrics/certificate-transparency-go/ctpolicy"
+	"github.com/letrics/certificate-transparency-go/jsonclient"
+	"github.com/letrics/certificate-transparency-go/loglist3"
+	"github.com/letrics/certificate-transparency-go/trillian/ctfe"
+	"github.com/letrics/certificate-transparency-go/x509"
+	"github.com/letrics/certificate-transparency-go/x509util"
 	"k8s.io/klog/v2"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/letrics/certificate-transparency-go"
 )
 
 var (

@@ -23,12 +23,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/certificate-transparency-go/trillian/ctfe"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
 	"github.com/google/trillian"
 	"github.com/google/trillian/client"
 	"github.com/google/trillian/monitoring/prometheus"
 	"github.com/google/trillian/testonly/integration"
+	"github.com/letrics/certificate-transparency-go/trillian/ctfe"
+	"github.com/letrics/certificate-transparency-go/trillian/ctfe/configpb"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"k8s.io/klog/v2"
 

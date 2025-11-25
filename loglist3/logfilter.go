@@ -17,8 +17,8 @@ package loglist3
 import (
 	"fmt"
 
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/letrics/certificate-transparency-go/x509"
+	"github.com/letrics/certificate-transparency-go/x509util"
 	"k8s.io/klog/v2"
 )
 
@@ -151,4 +151,3 @@ func (ll *LogList) TemporallyCompatible(cert *x509.Certificate) LogList {
 	klog.V(1).Info(logMessage)
 	return compatible
 }
-

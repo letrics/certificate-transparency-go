@@ -23,10 +23,10 @@ import (
 	"time"
 
 	"github.com/go-sql-driver/mysql"
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
-	"github.com/google/certificate-transparency-go/x509"
 	"github.com/jackc/pgx/v5/pgconn"
+	ct "github.com/letrics/certificate-transparency-go"
+	"github.com/letrics/certificate-transparency-go/trillian/ctfe/configpb"
+	"github.com/letrics/certificate-transparency-go/x509"
 	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"
 	"k8s.io/klog/v2"

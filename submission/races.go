@@ -21,8 +21,8 @@ import (
 	"sync"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/ctpolicy"
+	ct "github.com/letrics/certificate-transparency-go"
+	"github.com/letrics/certificate-transparency-go/ctpolicy"
 )
 
 const (

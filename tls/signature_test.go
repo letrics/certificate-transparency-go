@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/certificate-transparency-go/testdata"
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/letrics/certificate-transparency-go/testdata"
+	"github.com/letrics/certificate-transparency-go/tls"
+	"github.com/letrics/certificate-transparency-go/x509"
 )
 
 func TestVerifySignature(t *testing.T) {

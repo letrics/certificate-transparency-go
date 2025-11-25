@@ -29,11 +29,11 @@ import (
 	"sync"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	wit_api "github.com/google/certificate-transparency-go/internal/witness/api"
-	wh "github.com/google/certificate-transparency-go/internal/witness/client/http"
-	"github.com/google/certificate-transparency-go/internal/witness/verifier"
-	"github.com/google/certificate-transparency-go/loglist3"
+	ct "github.com/letrics/certificate-transparency-go"
+	wit_api "github.com/letrics/certificate-transparency-go/internal/witness/api"
+	wh "github.com/letrics/certificate-transparency-go/internal/witness/client/http"
+	"github.com/letrics/certificate-transparency-go/internal/witness/verifier"
+	"github.com/letrics/certificate-transparency-go/loglist3"
 	"k8s.io/klog/v2"
 )
 

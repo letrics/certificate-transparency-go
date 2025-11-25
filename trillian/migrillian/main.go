@@ -28,15 +28,15 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"k8s.io/klog/v2"
 
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/jsonclient"
-	"github.com/google/certificate-transparency-go/trillian/migrillian/configpb"
-	"github.com/google/certificate-transparency-go/trillian/migrillian/core"
 	"github.com/google/trillian"
 	"github.com/google/trillian/monitoring"
 	"github.com/google/trillian/monitoring/prometheus"
 	"github.com/google/trillian/util"
 	"github.com/google/trillian/util/election2"
+	"github.com/letrics/certificate-transparency-go/client"
+	"github.com/letrics/certificate-transparency-go/jsonclient"
+	"github.com/letrics/certificate-transparency-go/trillian/migrillian/configpb"
+	"github.com/letrics/certificate-transparency-go/trillian/migrillian/core"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 

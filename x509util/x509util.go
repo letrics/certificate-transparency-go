@@ -30,12 +30,12 @@ import (
 	"net"
 	"strconv"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/asn1"
-	"github.com/google/certificate-transparency-go/gossip/minimal/x509ext"
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509/pkix"
+	ct "github.com/letrics/certificate-transparency-go"
+	"github.com/letrics/certificate-transparency-go/asn1"
+	"github.com/letrics/certificate-transparency-go/gossip/minimal/x509ext"
+	"github.com/letrics/certificate-transparency-go/tls"
+	"github.com/letrics/certificate-transparency-go/x509"
+	"github.com/letrics/certificate-transparency-go/x509/pkix"
 )
 
 // OIDForStandardExtension indicates whether oid identifies a standard extension.

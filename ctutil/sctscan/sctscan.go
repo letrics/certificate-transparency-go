@@ -23,14 +23,14 @@ import (
 	"net/http"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/ctutil"
-	"github.com/google/certificate-transparency-go/jsonclient"
-	"github.com/google/certificate-transparency-go/loglist3"
-	"github.com/google/certificate-transparency-go/scanner"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
+	ct "github.com/letrics/certificate-transparency-go"
+	"github.com/letrics/certificate-transparency-go/client"
+	"github.com/letrics/certificate-transparency-go/ctutil"
+	"github.com/letrics/certificate-transparency-go/jsonclient"
+	"github.com/letrics/certificate-transparency-go/loglist3"
+	"github.com/letrics/certificate-transparency-go/scanner"
+	"github.com/letrics/certificate-transparency-go/x509"
+	"github.com/letrics/certificate-transparency-go/x509util"
 	"k8s.io/klog/v2"
 )
 

@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/ctpolicy"
-	"github.com/google/certificate-transparency-go/testdata"
-	"github.com/google/certificate-transparency-go/tls"
+	ct "github.com/letrics/certificate-transparency-go"
+	"github.com/letrics/certificate-transparency-go/ctpolicy"
+	"github.com/letrics/certificate-transparency-go/testdata"
+	"github.com/letrics/certificate-transparency-go/tls"
 )
 
 func testdataSCT() *ct.SignedCertificateTimestamp {

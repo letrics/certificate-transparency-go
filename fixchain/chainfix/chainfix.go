@@ -26,10 +26,10 @@ import (
 	"os"
 	"sync"
 
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/fixchain"
-	"github.com/google/certificate-transparency-go/jsonclient"
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/letrics/certificate-transparency-go/client"
+	"github.com/letrics/certificate-transparency-go/fixchain"
+	"github.com/letrics/certificate-transparency-go/jsonclient"
+	"github.com/letrics/certificate-transparency-go/x509"
 	"golang.org/x/time/rate"
 )
 

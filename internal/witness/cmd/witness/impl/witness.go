@@ -24,10 +24,10 @@ import (
 	"fmt"
 	"net/http"
 
-	ct "github.com/google/certificate-transparency-go"
-	ih "github.com/google/certificate-transparency-go/internal/witness/cmd/witness/internal/http"
-	"github.com/google/certificate-transparency-go/internal/witness/cmd/witness/internal/witness"
 	"github.com/gorilla/mux"
+	ct "github.com/letrics/certificate-transparency-go"
+	ih "github.com/letrics/certificate-transparency-go/internal/witness/cmd/witness/internal/http"
+	"github.com/letrics/certificate-transparency-go/internal/witness/cmd/witness/internal/witness"
 	_ "github.com/mattn/go-sqlite3" // Load drivers for sqlite3
 	"k8s.io/klog/v2"
 )

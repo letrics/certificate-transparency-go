@@ -15,8 +15,8 @@
 package ctutil
 
 import (
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/letrics/certificate-transparency-go/x509"
+	"github.com/letrics/certificate-transparency-go/x509util"
 	"testing"
 )
 

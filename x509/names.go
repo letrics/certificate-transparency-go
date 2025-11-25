@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/google/certificate-transparency-go/asn1"
-	"github.com/google/certificate-transparency-go/x509/pkix"
+	"github.com/letrics/certificate-transparency-go/asn1"
+	"github.com/letrics/certificate-transparency-go/x509/pkix"
 )
 
 const (
