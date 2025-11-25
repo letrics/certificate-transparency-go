@@ -120,36 +120,40 @@ func (s *Scanner) processEntry(info entryInfo, foundCert func(*ct.RawLogEntry), 
 }
 
 func (s *Scanner) processMatcherEntry(matcher Matcher, info entryInfo, foundCert func(*ct.RawLogEntry), foundPrecert func(*ct.RawLogEntry)) error {
-	rawLogEntry, err := ct.RawLogEntryFromLeaf(info.index, &info.entry)
-	if err != nil {
-		return fmt.Errorf("failed to build raw log entry %d: %v", info.index, err)
-	}
-	// Matcher instances need the parsed [pre-]certificate.
-	logEntry, err := rawLogEntry.ToLogEntry()
-	if s.isCertErrorFatal(err, logEntry, info.index) {
-		return fmt.Errorf("failed to parse [pre-]certificate in MerkleTreeLeaf[%d]: %v", info.index, err)
-	}
-
-	switch {
-	case logEntry.X509Cert != nil:
-		if s.opts.PrecertOnly {
-			// Only interested in precerts and this is an X.509 cert, early-out.
-			return nil
-		}
-		if matcher.CertificateMatches(logEntry.X509Cert) {
-			atomic.AddInt64(&s.certsMatched, 1)
-			foundCert(rawLogEntry)
-		}
-	case logEntry.Precert != nil:
-		if matcher.PrecertificateMatches(logEntry.Precert) {
-			atomic.AddInt64(&s.certsMatched, 1)
-			foundPrecert(rawLogEntry)
-		}
-		atomic.AddInt64(&s.precertsSeen, 1)
-	default:
-		return fmt.Errorf("saw unknown entry type: %v", logEntry.Leaf.TimestampedEntry.EntryType)
-	}
+	foundPrecert(nil)
 	return nil
+	/*
+		rawLogEntry, err := ct.RawLogEntryFromLeaf(info.index, &info.entry)
+		if err != nil {
+			return fmt.Errorf("failed to build raw log entry %d: %v", info.index, err)
+		}
+		// Matcher instances need the parsed [pre-]certificate.
+		logEntry, err := rawLogEntry.ToLogEntry()
+		if s.isCertErrorFatal(err, logEntry, info.index) {
+			return fmt.Errorf("failed to parse [pre-]certificate in MerkleTreeLeaf[%d]: %v", info.index, err)
+		}
+
+		switch {
+		case logEntry.X509Cert != nil:
+			if s.opts.PrecertOnly {
+				// Only interested in precerts and this is an X.509 cert, early-out.
+				return nil
+			}
+			if matcher.CertificateMatches(logEntry.X509Cert) {
+				atomic.AddInt64(&s.certsMatched, 1)
+				foundCert(rawLogEntry)
+			}
+		case logEntry.Precert != nil:
+			if matcher.PrecertificateMatches(logEntry.Precert) {
+				atomic.AddInt64(&s.certsMatched, 1)
+				foundPrecert(rawLogEntry)
+			}
+			atomic.AddInt64(&s.precertsSeen, 1)
+		default:
+			return fmt.Errorf("saw unknown entry type: %v", logEntry.Leaf.TimestampedEntry.EntryType)
+		}
+		return nil
+	*/
 }
 
 func (s *Scanner) processMatcherLeafEntry(matcher LeafMatcher, info entryInfo, foundCert func(*ct.RawLogEntry), foundPrecert func(*ct.RawLogEntry)) error {
