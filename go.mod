@@ -1,4 +1,4 @@
-module github.com/google/certificate-transparency-go
+module github.com/letrics/certificate-transparency-go
 
 go 1.24.0
 
